@@ -7,3 +7,5 @@ class Solution:
             freq_set.add(num) 
         return False
         
+# Notes:
+# * map is not needed here
