@@ -6,3 +6,5 @@ class Solution:
                 return (i, lookup[target-nums[i]])
             lookup[nums[i]] = i
         
+# Notes:
+# * have I seen (target - current number) before?
