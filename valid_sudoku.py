@@ -7,15 +7,13 @@ class Solution:
             seen_boxes = [set() for _ in range(0,9)]
             for row in range(0,9):
                 for column in range(0,9):
-                    if board[row][column] != '.':
-                        if board[row][column] in seen_row[row]:
-                            return False
-                        seen_row[row].add(board[row][column])
-                        if board[row][column] in seen_column[column]:
-                            return False
-                        seen_column[column].add(board[row][column]) 
-                        if board[row][column] in seen_boxes[(row//3)*3+(column//3)]:
-                            return False
-                        seen_boxes[(row//3)*3+(column//3)].add(board[row][column])
+                    if board[row][column] == '.':
+                        continue
+                    if board[row][column] in seen_row[row] or board[row][column] in seen_column[column] or board[row][column] in seen_boxes[(row//3)*3+(column//3)]:
+                        return False
+                    seen_row[row].add(board[row][column])
+                    seen_column[column].add(board[row][column]) 
+                    seen_boxes[(row//3)*3+(column//3)].add(board[row][column])
             return True
+            
             
