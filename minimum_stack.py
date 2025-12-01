@@ -22,3 +22,5 @@ class MinStack:
     def getMin(self) -> int:
         return self.min_[-1]
         
+# Maintain a helper stack -> something that wasn't smaller then previous min is never a candidate for that stack
+# Don't forget to put if not self.min_ or val <= self.min_[-1]: and not if not self.min_ or val < self.min_[-1]:
