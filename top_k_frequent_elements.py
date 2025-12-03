@@ -18,3 +18,4 @@ class Solution: # [4,4,4] k = 3
 
 
 # Bucket Sort or can be Heap
+# prvo izgradi klasican element counter map, i onda pomocu tog izgradi map di su keys: "broj ponajvljanja" a valuesi: koji brojevi imaju tolko ponavljanja
