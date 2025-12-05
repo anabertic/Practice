@@ -11,6 +11,8 @@ class Solution:
                 result+=1
         return result
 
+# t = s/v
+# if the car's time is lower then the one on top of stack, it's not a new fleet. If it's slower, it's a new fleet.
 
 
         
